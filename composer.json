@@ -1,6 +1,6 @@
 {
   "name": "jardis/classversion",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "ClassVersion enables loading classes with the same name from specific subdirectories associated with respective version labels",
   "type": "library",
   "license": "MIT",
