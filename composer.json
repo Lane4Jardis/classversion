@@ -1,7 +1,7 @@
 {
   "name": "jardis/classversion",
-  "version": "1.0.1",
-  "description": "Version is a class version loader based on .env file settings",
+  "version": "1.0.2",
+  "description": "ClassVersion enables loading classes with the same name from specific subdirectories associated with respective version labels",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "stable",
