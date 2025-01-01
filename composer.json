@@ -1,0 +1,45 @@
+{
+  "name": "jardis/classversion",
+  "version": "1.0.0",
+  "description": "Version is a class version loader based on .env file settings",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Rolf Beab",
+      "email": "rolf@lane4.digital"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6.22",
+    "phpstan/phpstan": "^2.0.4",
+    "squizlabs/php_codesniffer": "^3.11.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jardis\\Version\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jardis\\Version\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo '#!/usr/bin/env bash' > .git/hooks/pre-commit",
+      "echo 'bash ./support/pre-commit-hook.sh' >> .git/hooks/pre-commit",
+      "chmod +x .git/hooks/pre-commit"
+    ]
+  },
+  "homepage": "https://github.com/lane4jardis/version",
+  "support": {
+    "issues": "https://github.com/lane4jardis/version/issues",
+    "email": "rolf@lane4.digital"
+  },
+  "keywords": ["version", "classversion", "version class loader", "loader", "domain driven design", "jardis", "lane4jardis"]
+}
